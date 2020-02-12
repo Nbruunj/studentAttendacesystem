@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200" prefWidth="320" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.studentAttendanceSite">
+   <children>
+      <Button id="loginButton" fx:id="studentLogin" layoutX="233.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleButtonActionLogin" text="Login" />
+      <TextField fx:id="studentUserName" layoutX="136.0" layoutY="51.0" onAction="#handleActionUsername" styleClass="loginTextFields" />
+      <TextField fx:id="studentUserPassword" layoutX="136.0" layoutY="100.0" onAction="#handleActionPassword" styleClass="loginTextFields" />
+      <Label layoutX="53.0" layoutY="55.0" style="-fx-text-fill: blue;" text="Username" />
+      <Label layoutX="53.0" layoutY="104.0" style="-fx-text-fill: blue;" text="Password" />
+   </children>
+</AnchorPane>

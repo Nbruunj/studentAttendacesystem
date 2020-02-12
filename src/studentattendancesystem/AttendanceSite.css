@@ -1,0 +1,21 @@
+Label
+{
+    -fx-text-fill: blue;
+}
+
+AnchorPane
+{
+    -fx-background-image: url("easv.jpg");
+    -fx-background-size: cover;
+
+}
+
+#loginButton
+{
+    -fx-text-fill: blue;
+       
+}
+.loginTextFields
+{
+    -fx-background-color: white;
+}
