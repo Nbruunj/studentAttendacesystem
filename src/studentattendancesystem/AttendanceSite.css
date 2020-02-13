@@ -19,3 +19,10 @@ AnchorPane
 {
     -fx-background-color: white;
 }
+
+BorderPane
+{
+    -fx-background-image: url("easvbackground.jpg");
+    -fx-background-size: cover;
+
+}

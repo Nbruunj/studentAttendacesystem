@@ -1,16 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="200" prefWidth="320" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.studentAttendanceSite">
-   <children>
-      <Button id="loginButton" fx:id="studentLogin" layoutX="233.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleButtonActionLogin" text="Login" />
-      <TextField fx:id="studentUserName" layoutX="136.0" layoutY="51.0" onAction="#handleActionUsername" styleClass="loginTextFields" />
-      <TextField fx:id="studentUserPassword" layoutX="136.0" layoutY="100.0" onAction="#handleActionPassword" styleClass="loginTextFields" />
-      <Label layoutX="53.0" layoutY="55.0" style="-fx-text-fill: blue;" text="Username" />
-      <Label layoutX="53.0" layoutY="104.0" style="-fx-text-fill: blue;" text="Password" />
-   </children>
-</AnchorPane>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="711.0" styleClass="AnchorPane" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="191.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="308.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="171.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="144.0" minHeight="10.0" prefHeight="116.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="201.0" minHeight="10.0" prefHeight="201.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="87.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="221.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXTextField styleClass="loginTextFields" GridPane.columnIndex="1" />
+                  <JFXTextField prefWidth="221.0" styleClass="loginTextFields" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                        <RowConstraints maxHeight="10.0" minHeight="0.0" prefHeight="5.0" />
+                        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="25.0" />
+                    </rowConstraints>
+                     <children>
+                        <JFXCheckBox checkedColor="#cfd08e" text="Remember Me" />
+                        <JFXButton prefHeight="25.0" prefWidth="71.0" styleClass="loginTextFields" text="Login" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </top>
+</BorderPane>
