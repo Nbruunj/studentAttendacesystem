@@ -21,7 +21,7 @@ import javafx.scene.control.TextField;
  *
  * @author nbruu
  */
-public class studentAttendanceSite implements Initializable
+public class Checker implements Initializable
 {
     
     private String adresse;
