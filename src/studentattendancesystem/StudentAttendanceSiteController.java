@@ -70,7 +70,7 @@ public class StudentAttendanceSiteController implements Initializable {
         {
             Alert alert = new Alert(AlertType.INFORMATION);
             alert.setTitle("Wrong username/Password");
-            alert.setHeaderText("Please use the usernames, Teacher & Student for now :)");
+            alert.setHeaderText("Please use the usernames, Teacher & Student for now");
             alert.showAndWait();  
         }
     }
