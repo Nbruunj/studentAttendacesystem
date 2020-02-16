@@ -17,6 +17,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -48,7 +50,7 @@ public class StudentAttendanceSiteController implements Initializable {
     @FXML
     private void Login(ActionEvent event) throws IOException 
     {
-        if (LoginID.getText() == "student")
+        if (LoginID.getText().equals("Student"))
         {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Program.fxml"));
             Parent root1 = fxmlLoader.load();
@@ -56,14 +58,21 @@ public class StudentAttendanceSiteController implements Initializable {
             stage.setScene(new Scene(root1));
             stage.show();
         }
-        else
+        else if (LoginID.getText().equals("Teacher"))
         {
-            System.out.println(LoginID.getText().toString());
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Teacher.fxml"));
+            Parent root1 = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        }
+        else 
+        {
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Wrong username/Password");
+            alert.setHeaderText("Please use the usernames, Teacher & Student for now :)");
+            alert.showAndWait();  
         }
     }
-    
-    private void CheckId()
-    {
-        String Test = LoginID.getText().trim();
-    }
+
 }
