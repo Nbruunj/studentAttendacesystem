@@ -61,7 +61,7 @@
       </MenuBar>
       <ImageView fx:id="Image" fitHeight="129.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
          <image>
-            <Image url="@Pictures/student-3500990_1920.jpg" />
+            <Image url="@Pictures/professional-development-tools-for-teachers.jpg" />
          </image>
       </ImageView>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Sten Stensen  " GridPane.columnIndex="3" GridPane.rowIndex="2">
