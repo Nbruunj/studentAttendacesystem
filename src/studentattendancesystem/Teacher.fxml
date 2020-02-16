@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.BarChart?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.NumberAxis?>
+<?import com.jfoenix.controls.JFXListView?>
 <?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -19,10 +17,12 @@
 <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="743.0" styleClass="GridPane" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.ProgramController">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="28.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="212.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="0.0" prefWidth="268.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="22.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="221.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="199.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="21.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="363.0" minWidth="0.0" prefWidth="272.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="9.0" prefWidth="9.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="254.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="29.0" />
   </columnConstraints>
   <rowConstraints>
     <RowConstraints maxHeight="158.0" minHeight="3.0" prefHeight="19.0" vgrow="SOMETIMES" />
@@ -59,22 +59,12 @@
             </Menu>
          </menus>
       </MenuBar>
-      <ImageView fx:id="Image" fitHeight="129.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+      <ImageView fx:id="Image" fitHeight="129.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
          <image>
             <Image url="@Pictures/student-3500990_1920.jpg" />
          </image>
       </ImageView>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total absence" wrappingWidth="134.8203125" GridPane.columnIndex="1" GridPane.rowIndex="4">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </Text>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15%" GridPane.columnIndex="1" GridPane.rowIndex="5">
-         <font>
-            <Font name="System Bold" size="25.0" />
-         </font>
-      </Text>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Sten Stensen  " GridPane.columnIndex="2" GridPane.rowIndex="2">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Sten Stensen  " GridPane.columnIndex="3" GridPane.rowIndex="2">
          <font>
             <Font size="25.0" />
          </font>
@@ -84,16 +74,36 @@
             <Image url="@Pictures/Erhvervsakademi-Sydvest-450x300.png" />
          </image>
       </ImageView>
-      <Line endX="-99.99995422363281" endY="94.29289245605469" startX="-100.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-      <BarChart GridPane.columnIndex="2" GridPane.rowIndex="7">
-        <xAxis>
-          <CategoryAxis side="BOTTOM" />
-        </xAxis>
-        <yAxis>
-          <NumberAxis side="LEFT" />
-        </yAxis>
-      </BarChart>
+      <Line endX="-99.99995422363281" endY="94.29289245605469" startX="-100.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
       <PieChart prefHeight="159.0" prefWidth="191.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-      <Line endX="-99.99995422363281" endY="72.29289245605469" startX="59.292938232421875" startY="72.29290771484375" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <Line endX="-99.99995422363281" endY="72.29289245605469" startX="59.292938232421875" startY="72.29290771484375" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <JFXListView GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Classes" wrappingWidth="134.8203125" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <JFXListView GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Students" wrappingWidth="134.8203125" GridPane.columnIndex="3" GridPane.rowIndex="6">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <JFXListView GridPane.columnIndex="5" GridPane.rowIndex="7" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="absent days" wrappingWidth="134.8203125" GridPane.columnIndex="5" GridPane.rowIndex="6">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected class absent:" wrappingWidth="157.8203125" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected student absent:" wrappingWidth="206.8203125" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
    </children>
 </GridPane>
