@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -36,14 +37,14 @@
                   <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextField fx:id="LoginID" alignment="CENTER" promptText="Login" styleClass="loginTextFields" GridPane.rowIndex="1" />
-                  <JFXTextField fx:id="LoginPW" alignment="CENTER" prefWidth="221.0" styleClass="loginTextFields" text="Password" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="LoginID" alignment="CENTER" promptText="Login" styleClass="loginTextFields" text="LoginID" GridPane.rowIndex="1" />
                   <JFXButton fx:id="LoginBtn" onAction="#Login" prefHeight="25.0" prefWidth="71.0" styleClass="loginTextFields" text="Login" GridPane.rowIndex="4" />
                   <JFXCheckBox fx:id="RememberMe" checkedColor="#cfd08e" text="Remember Me" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold Italic" size="12.0" />
                      </font>
                   </JFXCheckBox>
+                  <PasswordField fx:id="Password" alignment="CENTER" text="Password" GridPane.rowIndex="2" />
                </children>
             </GridPane>
          </children>
