@@ -90,7 +90,7 @@
          </font>
       </Text>
       <JFXListView GridPane.columnIndex="5" GridPane.rowIndex="7" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="absent days" wrappingWidth="134.8203125" GridPane.columnIndex="5" GridPane.rowIndex="6">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Absent days" wrappingWidth="134.8203125" GridPane.columnIndex="5" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
