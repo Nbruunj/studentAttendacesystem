@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="711.0" styleClass="GridPane" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.StudentAttendanceSiteController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="711.0" styleClass="School" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.StudentAttendanceSiteController">
    <center>
       <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -39,7 +39,7 @@
                <children>
                   <JFXTextField fx:id="LoginID" alignment="CENTER" promptText="Login" styleClass="loginTextFields" text="LoginID" GridPane.rowIndex="1" />
                   <JFXButton fx:id="LoginBtn" onAction="#Login" prefHeight="25.0" prefWidth="71.0" styleClass="loginTextFields" text="Login" GridPane.rowIndex="4" />
-                  <JFXCheckBox fx:id="RememberMe" checkedColor="#cfd08e" text="Remember Me" GridPane.rowIndex="3">
+                  <JFXCheckBox fx:id="RememberMe" checkedColor="#5dabf5" text="Remember Me" textFill="WHITE" unCheckedColor="#53abee" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold Italic" size="12.0" />
                      </font>

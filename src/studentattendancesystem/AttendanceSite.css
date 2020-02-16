@@ -20,7 +20,14 @@ AnchorPane
     -fx-background-color: white;
 }
 
-GridPane
+.School
+{
+    -fx-background-image: url("easvbackground.jpg");
+    -fx-background-size: cover;
+
+}
+
+.Background
 {
     -fx-background-image: url("blur-background.jpg");
     -fx-background-size: cover;
