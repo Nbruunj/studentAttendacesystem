@@ -30,8 +30,8 @@
       <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
       <RowConstraints maxHeight="374.0" minHeight="8.0" prefHeight="22.0" vgrow="SOMETIMES" />
     <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="374.0" minHeight="4.0" prefHeight="4.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
       <RowConstraints maxHeight="374.0" minHeight="0.0" prefHeight="174.0" vgrow="SOMETIMES" />
       <RowConstraints maxHeight="324.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
@@ -78,19 +78,19 @@
       <PieChart prefHeight="159.0" prefWidth="191.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
       <Line endX="-99.99995422363281" endY="72.29289245605469" startX="59.292938232421875" startY="72.29290771484375" GridPane.columnIndex="5" GridPane.rowIndex="3" />
       <JFXListView GridPane.columnIndex="1" GridPane.rowIndex="7" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Classes" wrappingWidth="134.8203125" GridPane.columnIndex="1" GridPane.rowIndex="6">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Classes" textAlignment="CENTER" wrappingWidth="188.8203125" GridPane.columnIndex="1" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Text>
       <JFXListView GridPane.columnIndex="3" GridPane.rowIndex="7" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Students" wrappingWidth="134.8203125" GridPane.columnIndex="3" GridPane.rowIndex="6">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Students" textAlignment="CENTER" wrappingWidth="258.8203125" GridPane.columnIndex="3" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Text>
       <JFXListView GridPane.columnIndex="5" GridPane.rowIndex="7" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Absent days" wrappingWidth="134.8203125" GridPane.columnIndex="5" GridPane.rowIndex="6">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected student absent days" textAlignment="CENTER" wrappingWidth="243.8203125" GridPane.columnIndex="5" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
