@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="743.0" styleClass="GridPane" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.ProgramController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="28.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="212.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="0.0" prefWidth="268.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="22.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="221.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="158.0" minHeight="3.0" prefHeight="19.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="158.0" minHeight="0.0" prefHeight="9.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="374.0" minHeight="8.0" prefHeight="22.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="374.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="374.0" minHeight="0.0" prefHeight="174.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="324.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="My attendence" />
+                  <MenuItem mnemonicParsing="false" text="Classes " />
+                  <MenuItem mnemonicParsing="false" text="Register manual" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" text="Report bug" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Close">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Minimize Program" />
+                  <MenuItem mnemonicParsing="false" text="Close Program" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ImageView fx:id="Image" fitHeight="129.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <image>
+            <Image url="@Pictures/student-3500990_1920.jpg" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total absence" wrappingWidth="134.8203125" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15%" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Sten Stensen  " GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="52.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <image>
+            <Image url="@Pictures/Erhvervsakademi-Sydvest-450x300.png" />
+         </image>
+      </ImageView>
+      <Line endX="-99.99995422363281" endY="94.29289245605469" startX="-100.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <BarChart GridPane.columnIndex="2" GridPane.rowIndex="7">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart prefHeight="159.0" prefWidth="191.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Line endX="-99.99995422363281" endY="72.29289245605469" startX="59.292938232421875" startY="72.29290771484375" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+   </children>
+</GridPane>

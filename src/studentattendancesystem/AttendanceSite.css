@@ -26,3 +26,9 @@ BorderPane
     -fx-background-size: cover;
 
 }
+
+GridPane
+{
+    -fx-background-image: url("blur-background.jpg");
+    -fx-background-size: cover;
+}

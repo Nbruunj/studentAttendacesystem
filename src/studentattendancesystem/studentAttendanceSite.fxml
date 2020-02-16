@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="711.0" styleClass="AnchorPane" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="711.0" styleClass="AnchorPane" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.StudentAttendanceSiteController">
    <top>
       <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -23,9 +23,8 @@
           <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane alignment="CENTER" style="-fx-border-color: black; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1">
               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="87.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="221.0" />
               </columnConstraints>
               <rowConstraints>
@@ -34,9 +33,9 @@
                 <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextField styleClass="loginTextFields" GridPane.columnIndex="1" />
-                  <JFXTextField prefWidth="221.0" styleClass="loginTextFields" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <JFXTextField fx:id="LoginID" styleClass="loginTextFields" />
+                  <JFXTextField fx:id="LoginPW" prefWidth="221.0" styleClass="loginTextFields" GridPane.rowIndex="1" />
+                  <GridPane GridPane.rowIndex="2">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -48,8 +47,11 @@
                         <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="25.0" />
                     </rowConstraints>
                      <children>
-                        <JFXCheckBox checkedColor="#cfd08e" text="Remember Me" />
-                        <JFXButton prefHeight="25.0" prefWidth="71.0" styleClass="loginTextFields" text="Login" GridPane.rowIndex="4" />
+                        <JFXCheckBox fx:id="RememberMe" checkedColor="#cfd08e" text="Remember Me" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></JFXCheckBox>
+                        <JFXButton fx:id="LoginBtn" prefHeight="25.0" prefWidth="71.0" styleClass="loginTextFields" text="Login" GridPane.rowIndex="4" />
                      </children>
                   </GridPane>
                </children>
