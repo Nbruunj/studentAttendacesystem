@@ -38,7 +38,7 @@
                <children>
                   <JFXTextField fx:id="LoginID" alignment="CENTER" promptText="Login" styleClass="loginTextFields" GridPane.rowIndex="1" />
                   <JFXTextField fx:id="LoginPW" alignment="CENTER" prefWidth="221.0" styleClass="loginTextFields" text="Password" GridPane.rowIndex="2" />
-                  <JFXButton fx:id="LoginBtn" prefHeight="25.0" prefWidth="71.0" styleClass="loginTextFields" text="Login" GridPane.rowIndex="4" />
+                  <JFXButton fx:id="LoginBtn" onAction="#Login" prefHeight="25.0" prefWidth="71.0" styleClass="loginTextFields" text="Login" GridPane.rowIndex="4" />
                   <JFXCheckBox fx:id="RememberMe" checkedColor="#cfd08e" text="Remember Me" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold Italic" size="12.0" />

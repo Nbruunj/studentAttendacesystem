@@ -20,13 +20,6 @@ AnchorPane
     -fx-background-color: white;
 }
 
-BorderPane
-{
-    -fx-background-image: url("easvbackground.jpg");
-    -fx-background-size: cover;
-
-}
-
 GridPane
 {
     -fx-background-image: url("blur-background.jpg");
