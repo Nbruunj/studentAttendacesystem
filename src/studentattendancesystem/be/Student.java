@@ -12,31 +12,13 @@ package studentattendancesystem.be;
 public class Student
 {
     private String name;
-    private String absence;
     
     
-    public void student (String name, String absence)
+    public void student (String name)
     {
         this.name = name;
-        this.absence = absence;
     }
     
-     /*
-     * Getter for absence
-     */
-    public String getabsence()
-    {
-        return absence;
-    }
-
-    /*
-     * Setter for absence
-     */
-    public void setabsence(String absence)
-    {
-        this.absence = absence;
-    }
-
     /*
      * Getter for name
      */
