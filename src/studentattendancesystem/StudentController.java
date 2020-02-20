@@ -26,7 +26,7 @@ import studentattendancesystem.dal.StudentDAO;
  *
  * @author Jonas
  */
-public class ProgramController implements Initializable {
+public class StudentController implements Initializable {
 
     @FXML
     private ImageView Image;

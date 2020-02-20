@@ -52,7 +52,7 @@ public class StudentAttendanceSiteController implements Initializable {
     {
         if (LoginID.getText().equals("Student"))
         {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Program.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Student.fxml"));
             Parent root1 = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));

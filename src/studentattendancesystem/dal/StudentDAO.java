@@ -60,7 +60,6 @@ public class StudentDAO {
         student.add(s3);
         student.add(s4);
         
-        System.out.println(s1.getdays());
         return student;
     }
 }
