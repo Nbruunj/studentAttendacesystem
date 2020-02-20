@@ -5,31 +5,11 @@
  */
 package studentattendancesystem.dal;
 
-import java.util.ArrayList;
-import java.util.List;
-import studentattendancesystem.be.Student;
-
 /**
  *
  * @author Jonas
  */
 public class StudentDAO
 {
-   
-   public List<Student> studentMock() 
-   {
-      List<Student> student = new ArrayList();
-      
-       Student s1 = new Student(1, "Søren St", "SCO");
-       Student s2 = new Student(2, "Sten Vi", "SCO");
-       Student s3 = new Student(3, "Thomas  Se", "SCO");
-       Student s4 = new Student(4, "Tommy  Tu", "SCO");
-       
-       student.add(s1);
-       student.add(s2);
-       student.add(s3);
-       student.add(s4);
-       
-       return student;
-   }
+    
 }

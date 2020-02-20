@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="743.0" styleClass="Background" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.TeacherController">
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="743.0" styleClass="Background" stylesheets="@AttendanceSite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentattendancesystem.ProgramController">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="28.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="199.0" />
@@ -77,19 +77,19 @@
       <Line endX="-99.99995422363281" endY="94.29289245605469" startX="-100.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
       <PieChart prefHeight="159.0" prefWidth="191.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
       <Line endX="-99.99995422363281" endY="72.29289245605469" startX="59.292938232421875" startY="72.29290771484375" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-      <JFXListView fx:id="txtClasses" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <JFXListView GridPane.columnIndex="1" GridPane.rowIndex="7" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Classes" textAlignment="CENTER" wrappingWidth="188.8203125" GridPane.columnIndex="1" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Text>
-      <JFXListView fx:id="txtStudents" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <JFXListView GridPane.columnIndex="3" GridPane.rowIndex="7" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Students" textAlignment="CENTER" wrappingWidth="258.8203125" GridPane.columnIndex="3" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Text>
-      <JFXListView fx:id="txtDays" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+      <JFXListView GridPane.columnIndex="5" GridPane.rowIndex="7" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected student absent days" textAlignment="CENTER" wrappingWidth="243.8203125" GridPane.columnIndex="5" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="19.0" />
