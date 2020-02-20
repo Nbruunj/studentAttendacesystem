@@ -90,17 +90,17 @@
          </font>
       </Text>
       <JFXListView fx:id="txtDays" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected student absent days" textAlignment="CENTER" wrappingWidth="243.8203125" GridPane.columnIndex="5" GridPane.rowIndex="6">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected student absence days" textAlignment="CENTER" wrappingWidth="243.8203125" GridPane.columnIndex="5" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Text>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected class absent: *%" textAlignment="CENTER" wrappingWidth="157.8203125" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected class absence: 33%" textAlignment="CENTER" wrappingWidth="157.8203125" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Text>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected student absent: *%" textAlignment="CENTER" wrappingWidth="206.8203125" GridPane.columnIndex="3" GridPane.rowIndex="4">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected student absence: 33%" textAlignment="CENTER" wrappingWidth="206.8203125" GridPane.columnIndex="3" GridPane.rowIndex="4">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>

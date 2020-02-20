@@ -5,74 +5,81 @@
  */
 package studentattendancesystem.be;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Jonas
  */
-public class Student
-{
+public class Student {
+
     private String name;
     private int id;
     private String grade;
-    
-    public Student(int i, String bilbo_Ba, String sco) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
-    public void student (int id, String name, String grade)
-    {
+    private List<String> days;
+
+    public Student(int id, String name, String grade, List<String> days) {
         this.name = name;
         this.id = id;
         this.grade = grade;
+        this.days = days;
     }
-    
+
+    /*
+     * Getter for days
+     */
+    public List<String> getdays() {
+        return days;
+    }
+
+    /*
+     * Setter for days
+     */
+    public void setdays(List<String> days) {
+        this.days = days;
+    }
+
     /*
      * Getter for Id
      */
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
 
     /*
      * Setter for Id
      */
-    public void setId(int id)
-    {
+    public void setId(int id) {
         this.id = id;
     }
-    
+
     /*
      * Getter for name
      */
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
     /*
      * Setter for name
      */
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
-    
-        /*
+
+    /*
      * Getter for grade
      */
-    public String getGrade()
-    {
+    public String getGrade() {
         return grade;
     }
 
     /*
      * Setter for grade
      */
-    public void setId(String grade)
-    {
+    public void setId(String grade) {
         this.grade = grade;
     }
-    
+
 }

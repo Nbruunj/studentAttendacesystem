@@ -13,23 +13,54 @@ import studentattendancesystem.be.Student;
  *
  * @author Jonas
  */
-public class StudentDAO
-{
-   
-   public List<Student> studentMock() 
-   {
-      List<Student> student = new ArrayList();
-      
-       Student s1 = new Student(1, "Søren St", "SCO");
-       Student s2 = new Student(2, "Sten Vi", "SCO");
-       Student s3 = new Student(3, "Thomas  Se", "SCO");
-       Student s4 = new Student(4, "Tommy  Tu", "SCO");
-       
-       student.add(s1);
-       student.add(s2);
-       student.add(s3);
-       student.add(s4);
-       
-       return student;
-   }
+public class StudentDAO {
+
+    public StudentDAO() {
+
+    }
+
+    public List<Student> studentMock() {
+        List<Student> student = new ArrayList();
+
+        
+        Student s1 = new Student(1, "Søren St", "SCO", new ArrayList<String>() {
+            {
+                add("Mandag - absence");
+                add("Tirsdag - absence");
+                add("Onsdag - absence");
+            }
+        });
+
+        Student s2 = new Student(2, "Sten Vi", "SCO", new ArrayList<String>() {
+            {
+                add("Mandag - Present");
+                add("Tirsdag - absence");
+                add("Onsdag - Present");
+            }
+        });
+
+        Student s3 = new Student(3, "Thomas  Se", "SCO", new ArrayList<String>() {
+            {
+                add("Mandag - Present");
+                add("Tirsdag - Present");
+                add("Onsdag - absence ");
+            }
+        });
+
+        Student s4 = new Student(4, "Tommy  Tu", "SCO", new ArrayList<String>() {
+            {
+                add("Mandag - absence ");
+                add("Tirsdag - Present");
+                add("Onsdag - Present");
+            }
+        });
+        
+        student.add(s1);
+        student.add(s2);
+        student.add(s3);
+        student.add(s4);
+        
+        System.out.println(s1.getdays());
+        return student;
+    }
 }

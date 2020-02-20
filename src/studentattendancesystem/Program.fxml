@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Menu?>
@@ -85,15 +85,15 @@
          </image>
       </ImageView>
       <Line endX="-99.99995422363281" endY="94.29289245605469" startX="-100.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-      <BarChart GridPane.columnIndex="2" GridPane.rowIndex="7">
+      <PieChart fx:id="pieChart" prefHeight="159.0" prefWidth="191.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Line endX="-99.99995422363281" endY="72.29289245605469" startX="59.292938232421875" startY="72.29290771484375" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <LineChart fx:id="lineChart" GridPane.columnIndex="2" GridPane.rowIndex="7">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
         <yAxis>
           <NumberAxis side="LEFT" />
         </yAxis>
-      </BarChart>
-      <PieChart prefHeight="159.0" prefWidth="191.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-      <Line endX="-99.99995422363281" endY="72.29289245605469" startX="59.292938232421875" startY="72.29290771484375" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      </LineChart>
    </children>
 </GridPane>

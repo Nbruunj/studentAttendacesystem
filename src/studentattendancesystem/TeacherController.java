@@ -26,22 +26,28 @@ public class TeacherController implements Initializable {
     @FXML
     private ImageView Image;
     @FXML
-    private JFXListView<?> txtClasses;
+    private JFXListView<String> txtClasses;
     @FXML
-    private JFXListView<?> txtStudents;
+    private JFXListView<String> txtStudents;
     @FXML
-    private JFXListView<?> txtDays;
+    private JFXListView<String> txtDays;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-       StudentDAO studentDao = new StudentDAO();
-       
+        StudentDAO studentDao = new StudentDAO();
+
         List<Student> studentMock = studentDao.studentMock();
-       
-        
-       System.out.println(studentMock.get(0));
-    }    
+
+        studentMock.forEach((student) -> {
+            txtStudents.getItems().add(student.getName());
+        });
+
+        txtClasses.getItems().add(studentMock.get(0).getGrade());
+
+        txtDays.getItems().addAll(studentMock.get(1).getdays());
+
+    }
 }
