@@ -37,16 +37,28 @@ public class TeacherController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        
         StudentDAO studentDao = new StudentDAO();
 
         List<Student> studentMock = studentDao.studentMock();
-
+        
+        /*
+        * Adding students to the listview
+        */
         studentMock.forEach((student) -> {
             txtStudents.getItems().add(student.getName());
         });
 
+        /*
+        * Setting the information to the list
+        */
+        
         txtClasses.getItems().add(studentMock.get(0).getGrade());
 
+        /*
+        * Setting the information to the list
+        */
         txtDays.getItems().addAll(studentMock.get(1).getdays());
 
     }
