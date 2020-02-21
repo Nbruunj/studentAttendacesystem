@@ -50,6 +50,10 @@ public class StudentAttendanceSiteController implements Initializable {
     @FXML
     private void Login(ActionEvent event) throws IOException 
     {
+        
+        /*
+        * An if statement, if the username Student is being used it will open the student fxml form
+        */
         if (LoginID.getText().equals("Student"))
         {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Student.fxml"));
@@ -58,6 +62,10 @@ public class StudentAttendanceSiteController implements Initializable {
             stage.setScene(new Scene(root1));
             stage.show();
         }
+        
+         /*
+        * An else if statement, if the username Teacher is being used it will open the Teacher fxml form
+        */
         else if (LoginID.getText().equals("Teacher"))
         {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Teacher.fxml"));
@@ -66,6 +74,10 @@ public class StudentAttendanceSiteController implements Initializable {
             stage.setScene(new Scene(root1));
             stage.show();
         }
+        
+        /*
+        * Creating a Alert box, if the wrong username is being used
+        */
         else 
         {
             Alert alert = new Alert(AlertType.INFORMATION);

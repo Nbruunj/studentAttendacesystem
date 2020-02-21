@@ -22,7 +22,9 @@ public class StudentDAO {
     public List<Student> studentMock() {
         List<Student> student = new ArrayList();
 
-        
+        /*
+        * Adds data to students
+        */
         Student s1 = new Student(1, "Søren St", "SCO", new ArrayList<String>() {
             {
                 add("Mandag - absence");
@@ -55,6 +57,9 @@ public class StudentDAO {
             }
         });
         
+        /*
+        * Adding the students to the list.
+        */
         student.add(s1);
         student.add(s2);
         student.add(s3);

@@ -44,8 +44,14 @@ public class StudentController implements Initializable {
         StudentDAO studentDao = new StudentDAO();
         List<Student> studentMock = studentDao.studentMock();
         
+        /*
+        * Setting the information to the list 
+        */
         txtDays.getItems().addAll(studentMock.get(1).getdays());
         
+        /*
+        * creating a chart data series,and setting the data to the chart
+        */
         XYChart.Series dataSeries1 = new XYChart.Series();
         dataSeries1.setName("2014");
 
